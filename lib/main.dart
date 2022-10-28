@@ -1,4 +1,3 @@
-
 import 'package:api_test/view/home.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.amber,
-        primaryColor: Colors.white,
+        primarySwatch: Colors.cyan,
+        primaryColor: Colors.amberAccent,
       ),
       home: const HomePage(),
     );

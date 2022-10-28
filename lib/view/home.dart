@@ -34,11 +34,18 @@ class _HomePageState extends State<HomePage> {
           title: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
-          Icon(Icons.restaurant_menu_sharp),
+          Icon(
+            Icons.restaurant_menu_sharp,
+            color: Colors.amberAccent,
+            size: 50,
+          ),
           SizedBox(
             width: 10,
           ),
-          Text('Food Recipes')
+          Text(
+            'Food Recipes',
+            style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+          )
         ],
       )),
       body: _isLoading
@@ -51,7 +58,6 @@ class _HomePageState extends State<HomePage> {
                     cookTime: recipes[index].totalTime,
                     rating: recipes[index].rating.toString(),
                     thumbnailUrl: recipes[index].image);
-              
               },
             ),
     );
